@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "ssccore:block/deconstruction_table_bottom",
+    "east": "ssccore:block/deconstruction_table_side",
+    "north": "ssccore:block/deconstruction_table_side",
+    "particle": "ssccore:block/deconstruction_table_side",
+    "south": "ssccore:block/deconstruction_table_side",
+    "up": "ssccore:block/deconstruction_table_top",
+    "west": "ssccore:block/deconstruction_table_side"
+  }
+}
