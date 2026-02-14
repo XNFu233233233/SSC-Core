@@ -45,7 +45,9 @@ public class SSCCore {
     public static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
     public static final DeferredHolder<Block, DeconstructionTableBlock> DECONSTRUCTION_TABLE = BLOCKS.register("deconstruction_table", 
-            () -> new DeconstructionTableBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
+            () -> new DeconstructionTableBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)
+                    .strength(2.5f, 6.0f)
+                    .requiresCorrectToolForDrops()));
     public static final DeferredHolder<Item, BlockItem> DECONSTRUCTION_TABLE_ITEM = ITEMS.register("deconstruction_table", 
             () -> new BlockItem(DECONSTRUCTION_TABLE.get(), new Item.Properties()));
 

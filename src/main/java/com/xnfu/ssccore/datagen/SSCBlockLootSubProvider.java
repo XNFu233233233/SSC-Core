@@ -16,9 +16,8 @@ public class SSCBlockLootSubProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        // 配置为破坏后什么都不掉落（方块本身不掉落）
-        // 物品掉落逻辑已在 Block 类中的 onRemove 显式处理
-        this.add(SSCCore.DECONSTRUCTION_TABLE.get(), noDrop());
+        // 允许破坏后掉落方块本体
+        this.dropSelf(SSCCore.DECONSTRUCTION_TABLE.get());
     }
 
     @Override
