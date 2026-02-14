@@ -1,12 +1,12 @@
 {
   "block.ssccore.deconstruction_table": "Deconstruction Table",
   "container.ssccore.deconstruction_table": "Deconstruction Table",
-  "itemGroup.ssccore": "SSC Core",
   "gui.ssccore.config": "Config: %s",
   "gui.ssccore.energy": "Energy: %s / %s FE",
-  "gui.ssccore.on": "On",
   "gui.ssccore.off": "Off",
+  "gui.ssccore.on": "On",
   "gui.ssccore.tooltip.config": "Recipe Index Number",
+  "gui.ssccore.tooltip.energy": "Machine Energy",
   "gui.ssccore.tooltip.progress": "Deconstruction Progress",
-  "gui.ssccore.tooltip.energy": "Machine Energy"
+  "itemGroup.ssccore": "SSC Core"
 }

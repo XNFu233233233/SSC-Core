@@ -17,5 +17,7 @@ public class SSCDataGenerator {
         generator.addProvider(event.includeServer(), SSCLootTableProvider.create(output, registries));
         generator.addProvider(event.includeServer(), new SSCBlockTagProvider(output, registries, event.getExistingFileHelper()));
         generator.addProvider(event.includeClient(), new SSCBlockStateProvider(output, event.getExistingFileHelper()));
+        generator.addProvider(event.includeClient(), new SSCLangProvider(output, "en_us"));
+        generator.addProvider(event.includeClient(), new SSCLangProvider(output, "zh_cn"));
     }
 }

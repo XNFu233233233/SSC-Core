@@ -1,0 +1,12 @@
+{
+  "block.ssccore.deconstruction_table": "拆解台",
+  "container.ssccore.deconstruction_table": "拆解台",
+  "gui.ssccore.config": "配置: %s",
+  "gui.ssccore.energy": "能量: %s / %s FE",
+  "gui.ssccore.off": "关闭",
+  "gui.ssccore.on": "开启",
+  "gui.ssccore.tooltip.config": "配方索引编号",
+  "gui.ssccore.tooltip.energy": "机器能量",
+  "gui.ssccore.tooltip.progress": "拆解进度",
+  "itemGroup.ssccore": "SSC 核心"
+}
