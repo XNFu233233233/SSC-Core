@@ -78,3 +78,15 @@ The core feature of this mod: reverse existing "crafting" or "smelting" recipes 
 1.  **Auto Packaging**: The machine scans the input slot and processes up to 64 items in a single batch based on available output space.
 2.  **Fixed Cost**: A batch costs the same amount of time and energy regardless of whether it contains 1 or 64 items.
 3.  **Instant Completion**: If the machine has enough FE to cover the batch's `energy` cost, it completes the process in **1 Tick**.
+
+---
+
+## Maintenance & Destruction
+*   **Block Recovery**: The Deconstruction Table **drops itself** normally when broken.
+*   **Item Safety**: When broken, all contents (input, output, and items currently in the processing buffer) will drop to the ground.
+
+---
+
+## Troubleshooting
+*   **Ambiguous source!**: This occurs when one output item corresponds to multiple recipes. Specify a `type` (e.g., `minecraft:crafting_shaped`) in the `recipe` object or use a specific `id`.
+*   **Reverse deconstruction is NOT supported for multiple input options**: If a source recipe uses a Tag that represents multiple different items, the system cannot determine which one to return. Automatic derivation will fail for such recipes; use "Manual Mode" instead.
